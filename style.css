@@ -1,0 +1,506 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "popins" sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+a:link {
+  color: #e2eded;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #23e2b5;
+  font-weight: bold;
+  text-decoration: underline rgb(249, 248, 244);
+}
+a:active {
+  background-color: rgb(26, 102, 223);
+  font-style: italic;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  background-color: hsl(0, 0%, 100%);
+  justify-content: center;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 0px;
+}
+
+.menu a {
+  margin-left: 30px;
+  color: hsl(186, 90%, 13%);
+  font-weight: 700;
+}
+
+.menu a:hover {
+  color: #23e2b5;
+  font-weight: 900;
+  border-radius: 4rem;
+  /* box-shadow: 0 0 2rem hsl(186, 100%, 19%); */
+}
+
+.menu img:hover {
+  transform: scale(1.01);
+}
+
+.menu > div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.menu button {
+  border-radius: 30px;
+  background: white;
+  padding: 10px 5px 10px;
+  color: hsl(186, 90%, 13%);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.menu button:hover {
+  background: #23e2b5;
+  color: white;
+}
+
+.main {
+  max-width: 250vh;
+  background-size: cover;
+  background-image: url(images/hero-bg.png);
+  background-color: hsl(186, 90%, 13%);
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  font-size: 15px;
+  padding-top: 7rem;
+}
+
+.main .box {
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 2px solid rgb(240, 247, 240);
+  transition: 5s ease;
+}
+
+.main .box:hover {
+  border: 2px solid #23e2b5;
+  transition: 5s ease;
+}
+
+.main h1 {
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+  /* text-decoration: underline; */
+  color: #23e2b5;
+}
+
+.main p {
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.main button {
+  border-radius: 30px;
+  background: white;
+  padding: 15px 25px 15px;
+  color: hsl(186, 100%, 19%);
+  font-weight: 700;
+}
+
+.main button:hover {
+  background: #23e2b5;
+  color: white;
+}
+
+.main > div {
+  width: 800px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 300px 500px;
+  gap: 50px;
+  padding: 50px 0px 0 300px;
+  align-items: center;
+  text-align: center;
+}
+
+.main img:hover {
+  transform: scale(1.08);
+}
+
+.bodyA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-size: cover;
+  max-width: 250vh;
+  background-image: url(images/hero-bg.png);
+  background-color: hsl(186, 100%, 19%);
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  font-size: 15px;
+  padding-top: 7rem;
+  padding: 50px 150px 50px 150px;
+}
+
+.bodyA img:hover {
+  transform: scale(1.08);
+}
+
+.bodyA .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 35px;
+}
+
+.bodyA h2 {
+  color: white;
+  -webkit-text-stroke: 1px #23e2b5;
+  font-size: 700;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.bodyA p {
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+  margin-left: 150px;
+  text-align: ;
+}
+
+.bodyA button {
+  border-radius: 30px;
+  background: white;
+  padding: 10px 25px 10px;
+  color: hsl(186, 100%, 19%);
+  font-weight: 700;
+  margin-left: 150px;
+}
+
+.bodyA button:hover {
+  background: #23e2b5;
+  color: white;
+}
+
+.section {
+  max-width: 250vh;
+  background-size: cover;
+  background-image: url(images/hero-bg1.png);
+  background-color: hsl(186, 72%, 27%);
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  font-size: 15px;
+  padding-top: 7rem;
+}
+
+.section h1:hover {
+  color: #23e2b5;
+  cursor: pointer;
+}
+
+#searchbar {
+  margin-top: 30px;
+  padding: 10px 15px 10px;
+  border-radius: 10px;
+  color: black;
+  margin-right: 100px;
+}
+
+#icon {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -135px;
+  cursor: pointer;
+}
+
+/* .section #icon {
+  padding-top: 500px;
+} */
+
+.section .produits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.section img:hover {
+  transform: scale(1.08);
+}
+
+.sectionCont {
+  background-color: transparent;
+  background: linear-gradient(hsl(186, 100%, 19%), hsl(186, 72%, 27%));
+  min-height: 90vh;
+
+  padding-top: 50px;
+}
+
+.contactUs {
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.contactUs:hover {
+  color: #23e2b5;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: rgb(5, 75, 80);
+}
+
+.formbold-input-flex {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.formbold-input-flex > div {
+  width: 50%;
+}
+
+.formbold-input-radio-wrapper {
+  margin-bottom: 28px;
+}
+.formbold-radio-flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.formbold-radio-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.formbold-input-radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.formbold-radio-checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ffffff;
+  border: 1px solid #dde3ec;
+  border-radius: 50%;
+}
+.formbold-radio-label
+  .formbold-input-radio:checked
+  ~ .formbold-radio-checkmark {
+  background-color: #23e2b5;
+}
+.formbold-radio-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.formbold-radio-label
+  .formbold-input-radio:checked
+  ~ .formbold-radio-checkmark:after {
+  display: block;
+}
+
+.formbold-radio-label .formbold-radio-checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(40, 228, 109);
+  transform: translate(-50%, -50%);
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 13px 22px;
+  border-radius: 5px;
+  border: 1px solid #dde3ec;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input::placeholder {
+  color: #23e2b5;
+}
+.formbold-form-input:focus {
+  border-color: #23e2b5;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.formbold-form-label {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formbold-btn {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 14px 25px;
+  border: none;
+  font-weight: 500;
+  background-color: hsl(185, 59%, 46%);
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 3s ease;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px #23e2b5;
+  color: rgb(10, 10, 10);
+  background: #23e2b5;
+}
+
+footer {
+  background-size: cover;
+  background-image: url(images/footer-bg.png);
+  background-color: hsl(186, 100%, 19%);
+  /* padding: 20px 0; */
+  padding-top: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  /* margin-bottom: 25px; */
+  gap: 130px;
+}
+
+.content .find {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .find h2 {
+  margin-bottom: 15px;
+  margin-left: 25px;
+  text-decoration: underline;
+}
+
+.content .find p {
+  line-height: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.content .link {
+  display: grid;
+}
+
+.content .link h2 {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.content .link a {
+  text-decoration: none;
+}
+
+.content .quik {
+  display: grid;
+}
+
+.content .quik h2 {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.content .quik a {
+  text-decoration: none;
+}
+
+.follow {
+  display: grid;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.follow h2 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.container {
+  display: "";
+  text-align: center;
+}
+
+.container .media-social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: solid white;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.container:hover {
+  color: #23e2b5;
+}
